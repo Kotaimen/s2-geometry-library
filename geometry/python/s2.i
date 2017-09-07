@@ -17,6 +17,7 @@
 #include "s2cellunion.h"
 #include "s2loop.h"
 #include "s2polygon.h"
+#include "s2polygonbuilder.h"
 %}
 
 // The PACKED macro makes SWIG think that we're declaring a variable of type
@@ -74,6 +75,7 @@ vector<S2CellId> *OUTPUT {
 %include "s2cellunion.h"
 %include "s2loop.h"
 %include "s2polygon.h"
+%include "s2polygonbuilder.h"
 
 %define USE_STREAM_INSERTOR_FOR_STR(type)
   %extend type {
